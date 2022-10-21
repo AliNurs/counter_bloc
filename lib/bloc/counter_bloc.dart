@@ -5,7 +5,7 @@ class CounterBloc extends Bloc<ChangeCountEvents, CountersState> {
   CounterBloc() : super(CountersState(countVal: 0));
 
   void incrementCount<ChangeColorEvents>() {
-    emit(CountersState(countVal: state.countVal + 1));
+    emit(CountersState(countVal: state.countVal + 2));
   }
 
   void decrementCount<ChangeColorEvents>() {
